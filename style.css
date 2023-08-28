@@ -1,0 +1,92 @@
+/* <------- CSS RESET -------> */
+*, *::before,*::after{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+section,div,body,html{
+  margin: 0;
+  padding: 0;
+}
+/* <------- Utility classes -------> */
+
+.flex-row{
+  display: flex;
+  justify-content: center;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+
+.container{
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem;
+  max-width: 700px;
+}
+
+
+.hero{
+  background-color: rgba(221, 190, 51, 0.288);
+  background-image: url('./images/trafalgar-square.jpg');
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+.hero-container{
+  margin:auto;
+  color: rgb(243, 243, 243);
+  text-shadow: 2px 2px 4px #0000007e;
+}
+
+
+
+.activities-container{
+  padding: 2rem;
+  gap: 1rem;
+}
+.activities-col{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.circle{
+  border-radius: 50px;
+  max-width: 100px;
+  aspect-ratio: 1;
+}
+.circle:hover, .circle:focus{
+  transform: scale(1.07);
+}
+
+.card{
+  background-color: aquamarine;
+  border-radius: 0.5rem;
+  max-width: 450px;
+  padding: 2rem;
+  
+  margin-inline: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+@media (min-width:600px) {
+  .card{
+    flex-direction: row;
+  }
+}
+.card-content{
+  padding: 1rem;
+}
+.card-image{
+  width: 100px;
+}
+.card>*{
+  margin-inline: auto;
+}
